@@ -1,0 +1,957 @@
+{
+  "options": [
+    {
+      "label": "Adobe",
+      "icon": "fab fa-adobe",
+      "value": 1,
+      "color": "#ff0000",
+      "selected": false,
+      "unicode":"\uf778"
+    },
+    {
+      "label": "Algolia",
+      "icon": "fab fa-algolia",
+      "value": 2,
+      "color": "#8e43e7",
+      "selected": false,
+      "unicode":"\uf36c"
+    },
+    {
+      "label": "Alipay",
+      "icon": "fab fa-alipay",
+      "value": 3,
+      "color": "#0e9dec",
+      "selected": false,
+      "unicode":"\uf642"
+    },
+    {
+      "label": "Amazon",
+      "icon": "fab fa-amazon",
+      "value": 4,
+      "color": "#ff9900",
+      "selected": false,
+      "unicode":"\uf270"
+    },
+    {
+      "label": "Amazon Pay",
+      "icon": "fab fa-cc-amazon-pay",
+      "value": 5,
+      "color": "#ff9900",
+      "selected": false,
+      "unicode":"\uf42c"
+    },
+    {
+      "label": "Android",
+      "icon": "fab fa-android",
+      "value": 6,
+      "color": "#a4c639",
+      "selected": false,
+      "unicode":"\uf17b"
+    },
+    {
+      "label": "Angular",
+      "icon": "fab fa-angular",
+      "value": 7,
+      "color": "#b52e31",
+      "selected": false,
+      "unicode":"\uf420"
+    },
+    {
+      "label": "App Store",
+      "icon": "fab fa-app-store",
+      "value": 8,
+      "selected": false,
+      "unicode":"\uf36f"
+    },
+    {
+      "label": "iOS App Store",
+      "icon": "fab fa-app-store-ios",
+      "value": 9,
+      "color": "#0e9dec",
+      "selected": false,
+      "unicode":"\uf370"
+    },
+    {
+      "label": "Behance",
+      "icon": "fab fa-behance-square",
+      "value": 10,
+      "color": "#1769ff",
+      "selected": false,
+      "unicode":"\uf1b4"
+    },
+    {
+      "label": "Bitbucket",
+      "icon": "fab fa-bitbucket",
+      "value": 11,
+      "color": "#205081",
+      "selected": false,
+      "unicode":"\uf171"
+    },
+    {
+      "label": "Bitcoin",
+      "icon": "fab fa-bitcoin",
+      "value": 12,
+      "color": "#F7931A",
+      "selected": false,
+      "unicode":"\uf379"
+    },
+    {
+      "label": "Blackberry",
+      "icon": "fab fa-blackberry",
+      "value": 13,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf37b"
+    },
+    {
+      "label": "Blogger",
+      "icon": "fab fa-blogger",
+      "value": 14,
+      "color": "#f57d00",
+      "selected": false,
+      "unicode":"\uf37c"
+    },
+    {
+      "label": "Bluetooth",
+      "icon": "fab fa-bluetooth",
+      "value": 15,
+      "color": "#0082FC",
+      "selected": false,
+      "unicode":"\uf293"
+    },
+    {
+      "label": "Bootstrap",
+      "icon": "fab fa-bootstrap",
+      "value": 16,
+      "color": "#563d7c",
+      "selected": false,
+      "unicode":"\uf836"
+    },
+    {
+      "label": "BTC",
+      "icon": "fab fa-btc",
+      "value": 17,
+      "color": "#F7931A",
+      "selected": false,
+      "unicode":"\uf15a"
+    },
+    {
+      "label": "Paypal",
+      "icon": "fab fa-cc-paypal",
+      "value": 18,
+      "color": "#003087",
+      "selected": false,
+      "unicode":"\uf1ed"
+    },
+    {
+      "label": "Stripe",
+      "icon": "fab fa-cc-stripe",
+      "value": 19,
+      "color": "#00afe1",
+      "selected": false,
+      "unicode":"\uf429"
+    },
+    {
+      "label": "CentOS",
+      "icon": "fab fa-centos",
+      "value": 20,
+      "selected": false,
+      "unicode":"\uf789"
+    },
+    {
+      "label": "Chrome",
+      "icon": "fab fa-chrome",
+      "value": 21,
+      "selected": false,
+      "unicode":"\uf268"
+    },
+    {
+      "label": "Chromecast",
+      "icon": "fab fa-chromecast",
+      "value": 22,
+      "color": "#888888",
+      "selected": false,
+      "unicode":"\uf838"
+    },
+    {
+      "label": "Codepen",
+      "icon": "fab fa-codepen",
+      "value": 23,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf1cb"
+    },
+    {
+      "label": "Confluence",
+      "icon": "fab fa-confluence",
+      "value": 24,
+      "color": "#003366",
+      "selected": false,
+      "unicode":"\uf78d"
+    },
+    {
+      "label": "cPanel",
+      "icon": "fab fa-cpanel",
+      "value": 25,
+      "color": "#ff6c2c",
+      "selected": false,
+      "unicode":"\uf388"
+    },
+    {
+      "label": "CSS3",
+      "icon": "fab fa-css3-alt",
+      "value": 26,
+      "color": "#264de4",
+      "selected": false,
+      "unicode":"\uf38b"
+    },
+    {
+      "label": "Dev.to",
+      "icon": "fab fa-dev",
+      "value": 27,
+      "selected": false,
+      "unicode":"\uf6cc"
+    },
+    {
+      "label": "DeviantArt",
+      "icon": "fab fa-deviantart",
+      "value": 28,
+      "color": "#05cc47",
+      "selected": false,
+      "unicode":"\uf1bd"
+    },
+    {
+      "label": "Digital Ocean",
+      "icon": "fab fa-digital-ocean",
+      "value": 29,
+      "color": "#008bcf",
+      "selected": false,
+      "unicode":"\uf391"
+    },
+    {
+      "label": "Discord",
+      "icon": "fab fa-discord",
+      "value": 30,
+      "color": "#7289da",
+      "selected": false,
+      "unicode":"\uf392"
+    },
+    {
+      "label": "Discourse",
+      "icon": "fab fa-discourse",
+      "value": 31,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf393"
+    },
+    {
+      "label": "Docker",
+      "icon": "fab fa-docker",
+      "value": 32,
+      "color": "#0db7ed",
+      "selected": false,
+      "unicode":"\uf395"
+    },
+    {
+      "label": "Dropbox",
+      "icon": "fab fa-dropbox",
+      "value": 33,
+      "color": "#007ee5",
+      "selected": false,
+      "unicode":"\uf16b"
+    },
+    {
+      "label": "Drupal",
+      "icon": "fab fa-drupal",
+      "value": 34,
+      "color": "#81ceff",
+      "selected": false,
+      "unicode":"\uf1a9"
+    },
+    {
+      "label": "Edge",
+      "icon": "fab fa-edge",
+      "value": 35,
+      "color": "#0078D7",
+      "selected": false,
+      "edge": "f282"
+    },
+    {
+      "label": "Elementor",
+      "icon": "fab fa-elementor",
+      "color": "#000000",
+      "value": 36,
+      "selected": false,
+      "unicode":"\uf430"
+    },
+    {
+      "label": "Ember",
+      "icon": "fab fa-ember",
+      "value": 37,
+      "color": "#f23819",
+      "selected": false,
+      "unicode":"\uf423"
+    },
+    {
+      "label": "Erlang",
+      "icon": "fab fa-erlang",
+      "value": 38,
+      "color": "#a90533",
+      "selected": false,
+      "unicode":"\uf39d"
+    },
+    {
+      "label": "Ethereum",
+      "icon": "fab fa-ethereum",
+      "value": 39,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf42e"
+    },
+    {
+      "label": "Facebook",
+      "icon": "fab fa-facebook-square",
+      "value": 40,
+      "color": "#3b5998",
+      "selected": false,
+      "unicode":"\uf082"
+    },
+    {
+      "label": "Fedora",
+      "icon": "fab fa-fedora",
+      "value": 41,
+      "color": "#294172",
+      "selected": false,
+      "unicode":"\uf798"
+    },
+    {
+      "label": "Figma",
+      "icon": "fab fa-figma",
+      "value": 42,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf799"
+    },
+    {
+      "label": "Firefox",
+      "icon": "fab fa-firefox",
+      "value": 43,
+      "color": "#e66000",
+      "selected": false,
+      "unicode":"\uf269"
+    },
+    {
+      "label": "Free Code Camp",
+      "icon": "fab fa-free-code-camp",
+      "value": 44,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf2c5"
+    },
+    {
+      "label": "FreeBSD",
+      "icon": "fab fa-freebsd",
+      "value": 45,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf3a4"
+    },
+    {
+      "label": "Git",
+      "icon": "fab fa-github-alt",
+      "value": 46,
+      "color": "#333333",
+      "selected": false,
+      "unicode":"\uf841"
+    },
+    {
+      "label": "Gitkraken",
+      "icon": "fab fa-gitkraken",
+      "value": 47,
+      "color": "#179287",
+      "selected": false,
+      "unicode":"\uf3a6"
+    },
+    {
+      "label": "Gitlab",
+      "icon": "fab fa-gitlab",
+      "value": 48,
+      "color": "#e24329",
+      "selected": false,
+      "unicode":"\uf296"
+    },
+    {
+      "label": "Gitter",
+      "icon": "fab fa-gitter",
+      "value": 49,
+      "color": "#ed1965",
+      "selected": false,
+      "unicode":"\uf426"
+    },
+    {
+      "label": "Google",
+      "icon": "fab fa-google",
+      "value": 50,
+      "color": "#ea4335",
+      "selected": false,
+      "unicode":"\uf1a0"
+    },
+    {
+      "label": "Google Drive",
+      "icon": "fab fa-google-drive",
+      "value": 51,
+      "selected": false,
+      "unicode":"\uf3aa"
+    },
+    {
+      "label": "Google Play",
+      "icon": "fab fa-google-play",
+      "value": 52,
+      "selected": false,
+      "unicode":"\uf3ab"
+    },
+    {
+      "label": "Grunt",
+      "icon": "fab fa-grunt",
+      "value": 53,
+      "color": "#463014",
+      "selected": false,
+      "unicode":"\uf3ad"
+    },
+    {
+      "label": "Gulp",
+      "icon": "fab fa-gulp",
+      "value": 54,
+      "color": "#DA4648",
+      "selected": false,
+      "unicode":"\uf3ae"
+    },
+    {
+      "label": "HTML5",
+      "icon": "fab fa-html5",
+      "value": 55,
+      "color": "#e44d26",
+      "selected": false,
+      "unicode":"\uf13b"
+    },
+    {
+      "label": "Hubspot",
+      "icon": "fab fa-hubspot",
+      "value": 56,
+      "color": "#33475b",
+      "selected": false,
+      "unicode":"\uf3b2"
+    },
+    {
+      "label": "Intercom",
+      "icon": "fab fa-intercom",
+      "value": 57,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf7af"
+    },
+    {
+      "label": "Internet Explorer",
+      "icon": "fab fa-internet-explorer",
+      "value": 58,
+      "color": "#00D4F9",
+      "selected": false,
+      "unicode":"\uf26b"
+    },
+    {
+      "label": "Java",
+      "icon": "fab fa-java",
+      "value": 59,
+      "selected": false,
+      "unicode":"\uf4e4"
+    },
+    {
+      "label": "Jenkins",
+      "icon": "fab fa-jenkins",
+      "value": 60,
+      "selected": false,
+      "unicode":"\uf3b6"
+    },
+    {
+      "label": "Jira",
+      "icon": "fab fa-jira",
+      "value": 61,
+      "color": "#003366",
+      "selected": false,
+      "unicode":"\uf7b1"
+    },
+    {
+      "label": "Joget",
+      "icon": "fab fa-joget",
+      "value": 62,
+      "color": "dark-green",
+      "selected": false,
+      "unicode":"\uf3b7"
+    },
+    {
+      "label": "Joomla",
+      "icon": "fab fa-joomla",
+      "value": 63,
+      "color": "",
+      "selected": false,
+      "unicode":"\uf1aa"
+    },
+    {
+      "label": "Javascript",
+      "icon": "fab fa-js-square",
+      "value": 64,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf3b9"
+    },
+    {
+      "label": "JSFiddle",
+      "icon": "fab fa-jsfiddle",
+      "value": 65,
+      "color": "#2795EE",
+      "selected": false,
+      "unicode":"\uf1cc"
+    },
+    {
+      "label": "Kaggle",
+      "icon": "fab fa-kaggle",
+      "value": 66,
+      "color": "#37BAE8",
+      "selected": false,
+      "unicode":"\uf5fa"
+    },
+    {
+      "label": "Keybase",
+      "icon": "fab fa-keybase",
+      "value": 67,
+      "selected": false,
+      "unicode":"\uf4f5"
+    },
+    {
+      "label": "Key CDN",
+      "icon": "fab fa-keycdn",
+      "value": 68,
+      "selected": false,
+      "unicode":"\uf3ba"
+    },
+    {
+      "label": "Laravel",
+      "icon": "fab fa-laravel",
+      "value": 69,
+      "color": "#FF2D20",
+      "selected": false,
+      "unicode":"\uf3bd"
+    },
+    {
+      "label": "Less",
+      "icon": "fab fa-less",
+      "value": 70,
+      "selected": false,
+      "unicode":"\uf41d"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "value": 71,
+      "color": "#0077b5",
+      "selected": false,
+      "unicode":"\uf08c"
+    },
+    {
+      "label": "Linode",
+      "icon": "fab fa-linode",
+      "value": 72,
+      "color": "#00b259",
+      "selected": false,
+      "unicode":"\uf2b8"
+    },
+    {
+      "label": "Linx",
+      "icon": "fab fa-linux",
+      "value": 73,
+      "selected": false,
+      "unicode":"\uf17c"
+    },
+    {
+      "label": "Magento",
+      "icon": "fab fa-magento",
+      "value": 74,
+      "color": "#f46f25",
+      "selected": false,
+      "unicode":"\uf3c4"
+    },
+    {
+      "label": "Mailchimp",
+      "icon": "fab fa-mailchimp",
+      "value": 75,
+      "color": "#373737",
+      "selected": false,
+      "unicode":"\uf59e"
+    },
+    {
+      "label": "Markdown",
+      "icon": "fab fa-markdown",
+      "value": 76,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf60f"
+    },
+    {
+      "label": "Mastodon",
+      "icon": "fab fa-mastodon",
+      "value": 77,
+      "color": "#3088d4",
+      "selected": false,
+      "unicode":"\uf4f6"
+    },
+    {
+      "label": "Medium",
+      "icon": "fab fa-medium",
+      "value": 78,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf23a"
+    },
+    {
+      "label": "Meetup",
+      "icon": "fab fa-meetup",
+      "value": 79,
+      "color": "#e0393e",
+      "selected": false,
+      "unicode":"\uf2e0"
+    },
+    {
+      "label": "Microsoft",
+      "icon": "fab fa-microsoft",
+      "value": 80,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf3ca"
+    },
+    {
+      "label": "Node.js",
+      "icon": "fab fa-node-js",
+      "value": 81,
+      "color": "#43853d",
+      "selected": false,
+      "unicode":"\uf3d3"
+    },
+    {
+      "label": "NPM",
+      "icon": "fab fa-npm",
+      "value": 82,
+      "color": "#cb3837",
+      "selected": false,
+      "unicode":"\uf3d4"
+    },
+    {
+      "label": "OpenID",
+      "icon": "fab fa-openid",
+      "value": 83,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf19b"
+    },
+    {
+      "label": "Opera",
+      "icon": "fab fa-opera",
+      "value": 84,
+      "color": "#cc0f16",
+      "selected": false,
+      "unicode":"\uf26a"
+    },
+    {
+      "label": "Optin Monster",
+      "icon": "fab fa-optin-monster",
+      "value": 85,
+      "color": "light-green",
+      "selected": false,
+      "unicode":"\uf23c"
+    },
+    {
+      "label": "OSI",
+      "icon": "fab fa-osi",
+      "value": 86,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf41a"
+    },
+    {
+      "label": "Patreon",
+      "icon": "fab fa-patreon",
+      "value": 87,
+      "color": "#052d49",
+      "selected": false,
+      "unicode":"\uf3d9"
+    },
+    {
+      "label": "Periscope",
+      "icon": "fab fa-periscope",
+      "value": 88,
+      "color": "#3aa4c6",
+      "selected": false,
+      "unicode":"\uf3da"
+    },
+    {
+      "label": "Phabricator",
+      "icon": "fab fa-phabricator",
+      "value": 89,
+      "color": "#000000",
+      "selected": false,
+      "unicode":"\uf3db"
+    },
+    {
+      "label": "Pheonix Framework",
+      "icon": "fab fa-phoenix-framework",
+      "value": 90,
+      "color": "#EF4734",
+      "selected": false,
+      "unicode":"\uf3dc"
+    },
+    {
+      "label": "PHP",
+      "icon": "fab fa-php",
+      "value": 91,
+      "color": "#4f5b93",
+      "selected": false,
+      "unicode":"\uf457"
+    },
+    {
+      "label": "Pinterest",
+      "icon": "fab fa-pinterest",
+      "value": 92,
+      "color": "#bd081c",
+      "selected": false,
+      "unicode":"\uf0d2"
+    },
+    {
+      "label": "Product Hunt",
+      "icon": "fab fa-product-hunt",
+      "value": 93,
+      "color": "#da552f",
+      "selected": false,
+      "unicode":"\uf288"
+    },
+    {
+      "label": "Python",
+      "icon": "fab fa-python",
+      "value": 94,
+      "color": "#4584b6",
+      "selected": false,
+      "unicode":"\uf3e2"
+    },
+    {
+      "label": "R Project",
+      "icon": "fab fa-r-project",
+      "value": 95,
+      "selected": false,
+      "unicode":"\uf4f7"
+    },
+    {
+      "label": "Raspberry Pi",
+      "icon": "fab fa-raspberry-pi",
+      "value": 96,
+      "color": "#c7053d",
+      "selected": false,
+      "unicode":"\uf7bb"
+    },
+    {
+      "label": "React",
+      "icon": "fab fa-react",
+      "value": 97,
+      "color": "#00d8ff",
+      "selected": false,
+      "unicode":"\uf41b"
+    },
+    {
+      "label": "Redhat",
+      "icon": "fab fa-redhat",
+      "value": 98,
+      "color": "#cc0000",
+      "selected": false,
+      "unicode":"\uf7bc"
+    },
+    {
+      "label": "Safari",
+      "icon": "fab fa-safari",
+      "value": 99,
+      "color": "#1580E7",
+      "selected": false,
+      "unicode":"\uf267"
+    },
+    {
+      "label": "Salesforce",
+      "icon": "fab fa-salesforce",
+      "value": 100,
+      "color": "#1798c1",
+      "selected": false,
+      "unicode":"\uf83b"
+    },
+    {
+      "label": "Sass",
+      "icon": "fab fa-sass",
+      "value": 101,
+      "color": "#c69",
+      "selected": false,
+      "unicode":"\uf41e"
+    },
+    {
+      "label": "Sketch",
+      "icon": "fab fa-sketch",
+      "value": 102,
+      "color": "#fa6400",
+      "selected": false,
+      "unicode":"\uf7c6"
+    },
+    {
+      "label": "Slack",
+      "icon": "fab fa-slack",
+      "value": 103,
+      "selected": false,
+      "unicode":"\uf198"
+    },
+    {
+      "label": "Sourcetree",
+      "icon": "fab fa-sourcetree",
+      "value": 104,
+      "color": "#003366",
+      "selected": false,
+      "unicode":"\uf7d3"
+    },
+    {
+      "label": "Suse",
+      "icon": "fab fa-suse",
+      "value": 105,
+      "color": "#7AC142",
+      "selected": false,
+      "unicode":"\uf7d6"
+    },
+    {
+      "label": "Swift",
+      "icon": "fab fa-swift",
+      "value": 106,
+      "color": "#f05138",
+      "selected": false,
+      "unicode":"\uf8e1"
+    },
+    {
+      "label": "Symfony",
+      "icon": "fab fa-symfony",
+      "value": 107,
+      "selected": false,
+      "unicode":"\uf83d"
+    },
+    {
+      "label": "Trello",
+      "icon": "fab fa-trello",
+      "value": 108,
+      "color": "#0079bf",
+      "selected": false,
+      "unicode":"\uf181"
+    },
+    {
+      "label": "Twitter",
+      "icon": "fab fa-twitter-square",
+      "value": 109,
+      "color": "#1da1f2",
+      "selected": false,
+      "unicode":"\uf081"
+    },
+    {
+      "label": "Ubuntu",
+      "icon": "fab fa-ubuntu",
+      "value": 110,
+      "selected": false,
+      "color": "#dd4814",
+      "unicode":"\uf7df"
+    },
+    {
+      "label": "Unity",
+      "icon": "fab fa-unity",
+      "value": 111,
+      "color": "#222c37",
+      "selected": false,
+      "unicode":"\uf949"
+    },
+    {
+      "label": "Vaadin",
+      "icon": "fab fa-vaadin",
+      "value": 112,
+      "color": "#00b4f0",
+      "selected": false,
+      "unicode":"\uf408"
+    },
+    {
+      "label": "Vue.js",
+      "icon": "fab fa-vuejs",
+      "value": 113,
+      "color": "#4FBF8D",
+      "selected": false,
+      "unicode":"\uf41f"
+    },
+    {
+      "label": "Windows",
+      "icon": "fab fa-windows",
+      "value": 114,
+      "color": "#0078d7",
+      "selected": false,
+      "unicode":"\uf17a"
+    },
+    {
+      "label": "Wix",
+      "icon": "fab fa-wix",
+      "value": 115,
+      "selected": false,
+      "unicode":"\uf5cf"
+    },
+    {
+      "label": "Wordpress",
+      "icon": "fab fa-wordpress",
+      "value": 116,
+      "color": "#464646",
+      "selected": false,
+      "unicode":"\uf19a"
+    },
+    {
+      "label": "Xbox",
+      "icon": "fab fa-xbox",
+      "value": 117,
+      "color": "#52b043",
+      "selected": false,
+      "unicode":"\uf412"
+    },
+    {
+      "label": "Playstation",
+      "icon": "fab fa-playstation",
+      "value": 118,
+      "color": "#003087",
+      "selected": false,
+      "unicode":"\uf3df"
+    },
+    {
+      "label": "Yarn",
+      "icon": "fab fa-yarn",
+      "value": 119,
+      "color": "#2188b6",
+      "selected": false,
+      "unicode":"\uf7e3"
+    },
+    {
+      "label": "Youtube",
+      "icon": "fab fa-youtube",
+      "value": 120,
+      "color": "#ff0000",
+      "selected": false,
+      "unicode":"\uf167"
+    },
+    {
+      "label": "Apple",
+      "icon": "fab fa-apple",
+      "value": 121,
+      "color": "#000000",
+      "selected": false,
+      "unicode": "\uf179"
+
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "options": [
+    {
+      "label": "Comfortaa",
+      "style": "comfortaa",
+      "value": "Comfortaa"
+    },
+    {
+      "label": "Yeon Sung",
+      "style": "yeonsung",
+      "value": "Yeon Sung"
+    },
+    {
+      "label": "Baloo Bhai",
+      "style": "baloobhai",
+      "value": "Baloo Bhai"
+    },
+    {
+      "label": "Bungee",
+      "style": "bungee",
+      "value": "Bungee"
+    },
+    {
+      "label": "Roboto",
+      "style": "roboto",
+      "value": "Roboto"
+    },
+    {
+      "label": "Lato",
+      "style": "lato",
+      "value": 6,
+      "color": "green"
+    },
+    {
+      "label": "Archivo Black",
+      "style": "archivoblack",
+      "value": 7,
+      "color": "red"
+    },
+    {
+      "label": "Notable",
+      "style": "notable",
+      "value": 8
+    },
+    {
+      "label": "Ultra",
+      "style": "ultra",
+      "value": 9
+    },
+    {
+      "label": "DM Serif Display",
+      "style": "serifdisplay",
+      "value": 10
+    },
+    {
+      "label": "Roboto Mono",
+      "style": "robotomono",
+      "value": 11,
+      "color": "dark-blue"
+    },
+    {
+      "label": "Fira Code",
+      "style": "firacode",
+      "value": 12,
+      "color": "orange"
+    },
+    {
+      "label": "VT323",
+      "style": "vt323",
+      "value": 13
+    },
+    {
+      "label": "Shadows Into Light",
+      "style": "shadositl",
+      "value": 14,
+      "color": "orange"
+    },
+    {
+      "label": "Damion",
+      "style": "damion",
+      "value": 15,
+      "color": "blue"
+    },
+    {
+      "label": "Caveat Brush",
+      "style": "caveatbrush",
+      "value": 16,
+      "color": "purple"
+    },
+    {
+      "label": "Waiting for the Sunrish",
+      "style": "waitingforsunrise",
+      "value": 17
+    },
+    {
+      "label": "Lakki Reddy",
+      "style": "lakkireddy",
+      "value": 18,
+      "color": "blue"
+    }
+  ]
+}
