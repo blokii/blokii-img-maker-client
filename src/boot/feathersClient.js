@@ -6,7 +6,9 @@ import feathersVuex from "feathers-vuex";
 import Vue from "vue";
 import { socketio } from "@feathersjs/client";
 
-const API_URL = process.env.API_URL || "http://localhost:3030";
+// This pseudo hack works since I'm currently deploying everything in th backend public directory.
+// TODO: Have separate CI/CD for frontend/backend
+const API_URL = window.location.protocol + "//" + window.location.host + "/";
 
 const socket = io(API_URL, {
   transports: ["websocket"],

@@ -16,9 +16,11 @@
         Houston, TX.
       </div>
       <div class="col-12 col-sm-4 column self-center text-center">
-        This site uses Google Analytics. This site does not collect personal
+        <!--
+          This site uses Google Analytics. This site does not collect personal
         information aside from what is collected by Google Analytics. By using
         this site, you agree to these terms.
+        -->
       </div>
       <div class="col-12 col-sm-4 text-right q-pa-sm self-center">
         <q-btn

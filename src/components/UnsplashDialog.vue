@@ -17,8 +17,8 @@
           label="Search"
           v-model="search"
         >
-          <template v-slot:after>
-            <q-icon name="fal fa-search"></q-icon>
+          <template v-slot:prepend>
+            <q-icon name="fad fa-search"></q-icon>
           </template>
         </q-input>
       </div>

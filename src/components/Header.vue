@@ -16,7 +16,7 @@
             to="/"
             flat
             size="large"
-            class="visible font-semibold text-capitalize comfortaa"
+            class="visible text-medium text-capitalize comfortaa"
             :ripple="false"
           >
             <q-avatar square size="64">
@@ -27,7 +27,7 @@
             </span>
           </q-btn>
         </q-toolbar-title>
-        <div class="gt-md visible">
+        <div class="gt-md visible comfortaa">
           <q-btn stretch flat label="Home" icon="fad fa-home" to="/" />
           <q-btn stretch flat label="About" icon="fad fa-info" to="/about" />
           <q-btn stretch flat label="Help" icon="fad fa-question" to="/help" />
@@ -46,11 +46,11 @@
         <q-list padding>
           <q-item :active="checkActive('/home')" clickable v-ripple to="/home">
             <q-item-section avatar>
-              <q-icon name="fal fa-home" />
+              <q-icon name="fad fa-home" />
             </q-item-section>
 
             <q-item-section>
-              Dashboard
+              Home
             </q-item-section>
           </q-item>
 
@@ -61,7 +61,7 @@
             to="/about"
           >
             <q-item-section avatar>
-              <q-icon name="fal fa-info-circle" />
+              <q-icon name="fad fa-info-circle" />
             </q-item-section>
 
             <q-item-section>
@@ -70,7 +70,7 @@
           </q-item>
           <q-item :active="checkActive('/help')" clickable v-ripple to="/help">
             <q-item-section avatar>
-              <q-icon name="fal fa-question-circle" />
+              <q-icon name="fad fa-question-circle" />
             </q-item-section>
 
             <q-item-section>

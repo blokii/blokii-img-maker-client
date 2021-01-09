@@ -1,28 +1,59 @@
 <template>
   <q-page class="row">
+    <q-banner
+      class="text-grey-800 q-pa-md q-ma-md text-body1"
+      style="border: 1px solid #666"
+      rounded
+      v-if="showBanner"
+    >
+      Welcome! This is a simple image maker for tech blog posts. It creates a
+      downloadable image with your blog post title, subtitle, byline, and tech
+      icons. To get started, select an image. You can either enter a url with an
+      image you'd like to use or select an image from Unsplash. Please note, at
+      the time of deployment, the Unsplash API hasn't been cleared yet for
+      production use, so it's currently limited to 50 requests per hour. This
+      process typically takes a few days, so please be patient if results don't
+      appear! This is a work in progress. If you think this will be useful,
+      please let me know by sending me a
+      <a
+        class="text-weight-bold text-black"
+        style="text-decoration:none"
+        href="https://twitter.com/rachel_cheuk"
+        target="_blank"
+        >DM on Twitter</a
+      >. If there's enough interest, I'll continue to develop it.
+      <template v-slot:action>
+        <q-btn
+          outline
+          color="black"
+          label="Got it! Let's make an image!"
+          @click="showBanner = false"
+        />
+      </template>
+    </q-banner>
     <div class="col-12 col-md-9 q-pa-sm">
       <BlokiiCanvas />
     </div>
     <div class="col-12 col-md-3">
       <q-card class="q-pa-md q-mt-sm" flat>
-        <q-card-section>
-          <Settings />
+        <Settings />
+        <q-card-section class="bg-grey-2 q-py-md">
           <q-input
-            color="purple-12"
+            color="black"
             :value="filename"
             label="Enter filename for download..."
             emit-value
             @input="updateFilename($event)"
           >
             <template v-slot:prepend>
-              <q-icon name="far fa-file-download" />
+              <q-icon name="fad fa-file-download" />
             </template>
           </q-input>
         </q-card-section>
         <q-card-actions align="right" class="q-px-md">
           <q-btn
             unelevated
-            color="primary"
+            color="positive"
             @click="$root.$emit('download-image')"
             icon="fad fa-download"
             label="Download"
@@ -42,6 +73,11 @@ import BlokiiCanvas from "../components/BlokiiCanvas";
 import { mapState } from "vuex";
 
 export default {
+  data() {
+    return {
+      showBanner: true
+    };
+  },
   components: {
     Settings,
     BlokiiCanvas

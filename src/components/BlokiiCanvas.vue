@@ -205,11 +205,10 @@ export default {
       }
     },
     drawOverlays(ctx, x) {
-      console.log("canvas", this.HEIGHT / 5 + 250, this.WIDTH);
       ctx.fillStyle = "rgba(255,255,255,0.5)";
       ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.rect(0, this.HEIGHT / 5 + 250, this.WIDTH, this.HEIGHT / 5);
+      ctx.rect(0, this.HEIGHT / 5 + 200, this.WIDTH, this.HEIGHT / 5);
       ctx.fill();
     },
     drawImage() {},

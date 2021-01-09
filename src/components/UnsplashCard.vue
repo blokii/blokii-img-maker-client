@@ -22,7 +22,7 @@
         ><br />
         <q-icon
           v-if="pic.user.location"
-          name="fal fa-map-marker-smile"
+          name="fad fa-map-marker-smile"
           class="q-mr-xs"
         ></q-icon
         ><span class="text-caption">{{ pic.user.location }} </span>

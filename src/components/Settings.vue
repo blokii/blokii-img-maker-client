@@ -1,17 +1,17 @@
 <template>
   <q-card>
     <q-tabs
-      active-color="primary"
+      active-color="positive"
       align="justify"
       class="text-grey"
       dense
-      indicator-color="primary"
+      indicator-color="positive"
       narrow-indicator
       inline-label
       v-model="tab"
     >
-      <q-tab icon="far fa-image" label="Image" name="image" />
-      <q-tab icon="far fa-text" label="Text" name="text" />
+      <q-tab icon="fad fa-image" label="Image" name="image" />
+      <q-tab icon="fad fa-text" label="Text" name="text" />
     </q-tabs>
 
     <q-separator />
@@ -32,7 +32,7 @@
             v-if="$store.state.image.imageOptions.selectedUser"
             class="absolute all-pointer-events"
             size="32px"
-            name="fas fa-info-circle"
+            name="fad fa-info-circle"
             color="white"
             style="right: 8px; bottom: 8px"
           >
@@ -59,11 +59,11 @@
           debounce="500"
         >
           <template v-slot:before>
-            <q-icon name="far fa-image" />
+            <q-icon name="fad fa-image" />
           </template>
           <template v-slot:after>
             <q-btn color="blue" dense flat round size="x-small">
-              <q-icon name="fal fa-info-circle"></q-icon>
+              <q-icon name="fad fa-info-circle"></q-icon>
               <q-tooltip
                 :offset="[10, 10]"
                 anchor="center right"
@@ -93,7 +93,7 @@
           rounded
         >
           <template v-slot:before>
-            <q-icon name="fal fa-font" />
+            <q-icon name="fad fa-font" />
           </template>
           <template v-slot:option="scope">
             <q-item v-bind="scope.itemProps" v-on="scope.itemEvents">
@@ -115,7 +115,7 @@
           :value="title"
         >
           <template v-slot:prepend>
-            <q-icon name="far fa-heading" />
+            <q-icon name="fad fa-heading" />
           </template>
           <template v-slot:append>
             <q-icon :style="`color: ${titleColor};`" name="fas fa-square">
@@ -144,7 +144,7 @@
           :value="subtitle"
         >
           <template v-slot:prepend>
-            <q-icon name="far fa-h2" />
+            <q-icon name="fad fa-h2" />
           </template>
           <template v-slot:append>
             <q-icon :style="`color: ${subtitleColor};`" name="fas fa-square">
@@ -176,7 +176,7 @@
           :value="author"
         >
           <template v-slot:prepend>
-            <q-icon name="fal fa-id-card-alt" />
+            <q-icon name="fad fa-id-card-alt" />
           </template>
           <template v-slot:append>
             <q-icon :style="`color: ${authorColor};`" name="fas fa-square">
@@ -221,7 +221,7 @@
           hint="Pick up to 8 technologies."
         >
           <template v-slot:before>
-            <q-icon name="fal fa-laptop-code" />
+            <q-icon name="fad fa-laptop-code" />
           </template>
           <template v-slot:no-option>
             <q-item>

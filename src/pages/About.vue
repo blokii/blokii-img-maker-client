@@ -6,29 +6,29 @@
           <q-card flat>
             <q-card-section>
               <p class="text-h3">About</p>
-              <p class="text-body-1">
-                As part of the Blokii Ecosystem, this tool allows writers to
-                create consistent brand images and easily generate
-                technology-branded images. It provides a quick and easy way to
-                overlay titles, subtitles, authors, and technology icons onto
-                the image to create a blog post.
+              <p class="text-body1">
+                As part of the
+                <a href="https://www.blokii.com/labs" target="_blank"
+                  >Blokii Ecosystem</a
+                >, this tool allows authors to create consistently branded
+                images and easily generate image with tech frameworks for blog
+                posts. It provides a quick and easy way to overlay titles,
+                subtitles, authors, and technology icons onto the image to
+                create a blog post.
               </p>
-              <p class="text-body-1">
-                Current planned features include new templates, using brand
-                images instead of default icons, saving image settings to an
-                account (and much more once accounts are implemented).
+              <p class="text-body1">
+                Current planned features include implementing user accounts,
+                being able to save templates, using brand images instead of
+                default icons, saving image settings to an account (and much
+                more once accounts are implemented).
               </p>
-              <p class="text-body-1">
-                If you have any feature requests, send me a message. I'm working
-                on triaging features based on interest, so if you want your
-                voice to be heard, tell me what you find useful and would like
-                to see in the next release. I'm also working on providing a
-                transparent product roadmap for users to see what's upcoming, as
-                well as an option to vote on features.
-              </p>
-              <p class="text-body-1">
-                I'm working on this in my free time, so if you find this useful,
-                please consider supporting me.
+              <p class="text-body1">
+                If you have any feature requests,
+                <a href="https://twitter.com/rachel_cheuk" target="_blank"
+                  >send me a message on Twitter</a
+                >. I'm working on triaging features based on interest, so if you
+                want your voice to be heard, tell me what you find useful and
+                would like to see in the next release.
               </p>
             </q-card-section>
           </q-card>
@@ -37,3 +37,14 @@
     </q-page>
   </q-page-container>
 </template>
+
+<style lang="scss" scoped>
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-size: 1.1em;
+}
+</style>

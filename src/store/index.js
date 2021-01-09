@@ -4,8 +4,6 @@ import Vuex from "vuex";
 import image from "./image";
 import text from "./text";
 import global from "./global";
-import canvas from "./canvas";
-import unsplash from "./unsplash";
 
 Vue.use(Vuex);
 
