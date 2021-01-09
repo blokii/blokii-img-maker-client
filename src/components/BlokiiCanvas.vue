@@ -17,7 +17,6 @@ export default {
       this.drawCanvas();
     },
     selected: function(newVal, oldVal) {
-      console.log("drawing for tech");
       this.drawCanvas();
     },
     backgroundUrl: function(newVal, oldVal) {
@@ -55,7 +54,6 @@ export default {
       backgroundUrl: state => state.image.imageOptions.backgroundUrl
     }),
     filterCSS() {
-      console.log("this.filter", this.filter.filterName);
       if (this.filter.filterName === "blur") {
         return `blur(${
           this.filter.filterParams.filterValue
@@ -165,7 +163,6 @@ export default {
       });
     },
     drawCanvas() {
-      console.log("draw canvas called in blockii");
       let canvas = this.$refs.canvas;
       let ctx = canvas.getContext("2d");
       const x = canvas.width / 2;
@@ -180,9 +177,7 @@ export default {
         background.onload = function() {
           background.height =
             (canvas.height * background.width) / background.naturalWidth;
-          console.log("filters in mimae", that.filter.filterName);
           if (that.filter.filterName) {
-            console.log("filtering", that.filterCSS);
             ctx.filter = that.filterCSS;
           }
           ctx.drawImage(
@@ -224,7 +219,7 @@ export default {
       }
 
       if (this.subtitle) {
-        ctx.font = "bold 72px '" + this.font + "', serif";
+        ctx.font = "bold 64px '" + this.font + "', serif";
         ctx.fillStyle = this.subtitleColor;
         ctx.lineWidth = 0.33;
         ctx.strokeStyle = this.subtitleStrokeColor;
@@ -244,7 +239,6 @@ export default {
       }
     },
     drawTech(ctx, x) {
-      console.log("draw tech", this.HEIGHT);
       let distanceVar = 140;
       let distance = 120;
       this.selected.forEach(s => {

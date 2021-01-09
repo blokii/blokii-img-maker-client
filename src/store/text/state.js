@@ -11,7 +11,7 @@ export default function() {
       subtitle: "",
       author: "",
       titleColor: "#000",
-      subtitleColor: "#000",
+      subtitleColor: "#555",
       authorColor: "#000",
       titleStrokeColor: "#000",
       subtitleStrokeColor: "#000",

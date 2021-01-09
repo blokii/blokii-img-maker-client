@@ -6,6 +6,7 @@
       @input="updateFilter($event)"
       dense
       emit-value
+      color="positive"
       label="Image Filter"
       map-options
     >
@@ -19,6 +20,7 @@
       :value="filterValue"
       type="number"
       debounce="500"
+      color="positive"
       error-message="For best results, this number should be less than 50."
       :rules="[val => val <= 50]"
       v-if="showBlurSettings"
@@ -34,6 +36,7 @@
     </q-input>
     <q-input
       placeholder="20%"
+      color="positive"
       label="Brighten Value"
       error-message="For best results, this number should be less than 500."
       :rules="[val => val <= 500]"
@@ -53,6 +56,7 @@
     </q-input>
     <q-input
       placeholder="20%"
+      color="positive"
       label="Contrast Value"
       error-message="For best results, this number should be less than 500."
       :rules="[val => val <= 500]"
@@ -73,6 +77,7 @@
     <q-input
       placeholder="10%"
       label="Grayscale Value"
+      color="positive"
       error-message="For best results, this number should be less than 100."
       :rules="[val => val <= 100]"
       :value="filterValue"
@@ -92,6 +97,7 @@
     <q-input
       placeholder="90deg"
       label="Hue Rotate Value"
+      color="positive"
       error-message="For best results, this number should be equal to or less than 360."
       :rules="[val => val <= 360]"
       :value="filterValue"
@@ -113,6 +119,7 @@
       label="Invert Value"
       error-message="For best results, this number should be less than 100."
       :rules="[val => val <= 100]"
+      color="positive"
       :value="filterValue"
       type="number"
       debounce="500"
@@ -133,6 +140,7 @@
       error-message="For best results, this number should be less than 500."
       :rules="[val => val <= 500]"
       :value="filterValue"
+      color="positive"
       type="number"
       debounce="500"
       hint="100% is no change; above 100 = extra saturation."
@@ -153,6 +161,7 @@
       :rules="[val => val <= 100]"
       :value="filterValue"
       type="number"
+      color="positive"
       debounce="500"
       v-if="showOpacitySettings"
       hint="Between 0 and 100."
@@ -171,6 +180,7 @@
       error-message="For best results, this number should be less than 100."
       :rules="[val => val <= 100]"
       :value="filterValue"
+      color="positive"
       type="number"
       debounce="500"
       hint="Between 0 and 100."

@@ -12,20 +12,21 @@
       image you'd like to use or select an image from Unsplash. Please note, at
       the time of deployment, the Unsplash API hasn't been cleared yet for
       production use, so it's currently limited to 50 requests per hour. This
-      process typically takes a few days, so please be patient if results don't
-      appear! This is a work in progress. If you think this will be useful,
-      please let me know by sending me a
+      process typically takes several days, so please be patient if results
+      don't appear! This is a work in progress. Let me know what you want to see
+      from this by sending me a
       <a
         class="text-weight-bold text-black"
         style="text-decoration:none"
         href="https://twitter.com/rachel_cheuk"
         target="_blank"
         >DM on Twitter</a
-      >. If there's enough interest, I'll continue to develop it.
+      >. This will help my prioritize feature requests.
       <template v-slot:action>
         <q-btn
           outline
-          color="black"
+          color="positive"
+          icon="fas fa-check"
           label="Got it! Let's make an image!"
           @click="showBanner = false"
         />
@@ -43,6 +44,10 @@
             :value="filename"
             label="Enter filename for download..."
             emit-value
+            :rules="[
+              val => !!val || 'Field is required',
+              val => val.indexOf('.png') > -1 || 'Must contain .png in filename'
+            ]"
             @input="updateFilename($event)"
           >
             <template v-slot:prepend>
@@ -57,6 +62,7 @@
             @click="$root.$emit('download-image')"
             icon="fad fa-download"
             label="Download"
+            :disable="filename"
             size="md"
           />
         </q-card-actions>

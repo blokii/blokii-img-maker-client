@@ -52,7 +52,7 @@
         </q-img>
         <q-input
           @input="updateImage($event, BACKGROUND_URL)"
-          color="purple-12"
+          color="positive"
           label="Background Image Url"
           :value="backgroundUrl"
           v-on:set-background="setBackground"
@@ -62,7 +62,7 @@
             <q-icon name="fad fa-image" />
           </template>
           <template v-slot:after>
-            <q-btn color="blue" dense flat round size="x-small">
+            <q-btn color="green" dense flat round size="x-small">
               <q-icon name="fad fa-info-circle"></q-icon>
               <q-tooltip
                 :offset="[10, 10]"
@@ -90,6 +90,7 @@
           map-options
           option-value="label"
           outlined
+          color="positive"
           rounded
         >
           <template v-slot:before>
@@ -110,7 +111,7 @@
         <q-input
           @keyup="updateVal($event.target.value, TITLE)"
           debounce="500"
-          color="purple-12"
+          color="positive"
           label="Title"
           :value="title"
         >
@@ -139,7 +140,7 @@
         <q-input
           @keyup="updateVal($event.target.value, SUBTITLE)"
           debounce="500"
-          color="purple-12"
+          color="positive"
           label="Subtitle"
           :value="subtitle"
         >
@@ -170,7 +171,7 @@
         </q-input>
         <q-input
           @keyup="updateVal($event.target.value, AUTHOR)"
-          color="purple-12"
+          color="positive"
           label="Author"
           :debounce="500"
           :value="author"
@@ -206,6 +207,7 @@
           use-input
           @filter="filterFn"
           class="q-my-sm"
+          color="positive"
           dense
           label="Technologies"
           placeholder="Start typing a technology..."
