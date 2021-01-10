@@ -11,8 +11,8 @@
                 <a href="https://www.blokii.com/labs" target="_blank"
                   >Blokii Ecosystem</a
                 >, this tool allows authors to create consistently branded
-                images and easily generate image with tech frameworks for blog
-                posts. It provides a quick and easy way to overlay titles,
+                images and easily generate an image with tech frameworks for
+                blog posts. It provides a quick and easy way to overlay titles,
                 subtitles, authors, and technology icons onto the image to
                 create a blog post.
               </p>
