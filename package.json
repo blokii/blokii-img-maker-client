@@ -1,7 +1,7 @@
 {
   "name": "blokii-img-gen-client",
   "version": "0.0.1",
-  "description": "Blokii Image Maker is a simple app that allows users to generate images for their tech blogs.",
+  "description": "Blokii Image Maker is a simple app that allows users to generate images for their tech blog posts.",
   "productName": "Blokii Image Maker",
   "author": "Rachel Cheuk <hello@rachelcheuk.com>",
   "private": true,
