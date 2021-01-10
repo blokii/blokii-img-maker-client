@@ -21,7 +21,7 @@
         href="https://twitter.com/rachel_cheuk"
         target="_blank"
         >DM on Twitter</a
-      >. This will help my prioritize feature requests.
+      >. This will help me prioritize feature requests.
       <template v-slot:action>
         <q-btn
           outline

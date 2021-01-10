@@ -8,7 +8,7 @@
           round
           class="lt-md visible"
           @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
+          icon="fad fa-bars"
           aria-label="Menu"
         />
         <q-toolbar-title>

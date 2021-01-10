@@ -21,6 +21,13 @@
         information aside from what is collected by Google Analytics. By using
         this site, you agree to these terms.
         -->
+        Have a suggestion?
+        <a
+          class="text-weight-bold text-white"
+          href="https://www.twitter.com/rachel_cheuk"
+          target="_blank"
+          >Send me DM on Twitter.</a
+        >
       </div>
       <div class="col-12 col-sm-4 text-right q-pa-sm self-center">
         <q-btn

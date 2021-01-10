@@ -409,10 +409,10 @@ export default {
           this.$store.commit("image/updateOptions", { imageOptions: data });
         })
         .onCancel(() => {
-          console.log("Cancelled");
+          //console.log("Cancelled");
         })
         .onDismiss(() => {
-          console.log("Dismissed");
+          //console.log("Dismissed");
         });
     }
   },
