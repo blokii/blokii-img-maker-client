@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-select
+      :disable="disableInput"
       :options="FILTER_TYPES"
       :value="filter"
       @input="updateFilter($event)"
@@ -15,6 +16,7 @@
       </template>
     </q-select>
     <q-input
+      :disable="disableInput"
       placeholder="10px"
       label="Blur Length"
       :value="filterValue"
@@ -35,6 +37,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="20%"
       color="positive"
       label="Brighten Value"
@@ -55,6 +58,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="20%"
       color="positive"
       label="Contrast Value"
@@ -75,6 +79,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="10%"
       label="Grayscale Value"
       color="positive"
@@ -95,6 +100,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="90deg"
       label="Hue Rotate Value"
       color="positive"
@@ -115,6 +121,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="10%"
       label="Invert Value"
       error-message="For best results, this number should be less than 100."
@@ -135,6 +142,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="30%"
       label="Saturate Value"
       error-message="For best results, this number should be less than 500."
@@ -155,6 +163,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="25%"
       label="Opacity Value"
       error-message="For best results, this number should be less than 100."
@@ -175,6 +184,7 @@
       </template>
     </q-input>
     <q-input
+      :disable="disableInput"
       placeholder="60%"
       label="Sepia Value"
       error-message="For best results, this number should be less than 100."
@@ -213,6 +223,12 @@ const FILTERS = [
 ];
 
 export default {
+  props: {
+    disableInput: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       FILTER_TYPES: FILTERS,
@@ -258,7 +274,6 @@ export default {
       this.$store.commit("image/updateFilter", { filterName: val });
     },
     updateFilterParam(val) {
-      console.log("param val", val, this.filterError);
       if (!this.filterError) {
         this.$store.commit("image/updateFilterOptions", { settings: val });
       }

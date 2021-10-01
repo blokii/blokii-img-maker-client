@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "Blokii Image Maker",
+  name: "blokii-image-maker",
   meta: {
     meta: {
       keywords: {

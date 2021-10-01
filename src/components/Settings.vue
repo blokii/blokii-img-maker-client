@@ -18,7 +18,11 @@
     <q-tab-panels animated v-model="tab">
       <q-tab-panel name="image">
         <div class="row justify-center">
-          <q-btn align="center" color="black" @click="showUnplashDialog"
+          <q-btn
+            align="center"
+            color="black"
+            :disable="disableInput"
+            @click="showUnplashDialog"
             >Pick from Unsplash
           </q-btn>
         </div>
@@ -57,6 +61,7 @@
           :value="backgroundUrl"
           v-on:set-background="setBackground"
           debounce="500"
+          :disable="disableInput"
         >
           <template v-slot:before>
             <q-icon name="fad fa-image" />
@@ -77,7 +82,7 @@
             </q-btn>
           </template>
         </q-input>
-        <FilterImage />
+        <FilterImage :disable-input="disableInput" />
       </q-tab-panel>
       <q-tab-panel name="text">
         <q-select
@@ -92,6 +97,7 @@
           outlined
           color="positive"
           rounded
+          :disable="disableInput"
         >
           <template v-slot:before>
             <q-icon name="fad fa-font" />
@@ -114,6 +120,7 @@
           color="positive"
           label="Title"
           :value="title"
+          :disable="disableInput"
         >
           <template v-slot:prepend>
             <q-icon name="fad fa-heading" />
@@ -143,6 +150,7 @@
           color="positive"
           label="Subtitle"
           :value="subtitle"
+          :disable="disableInput"
         >
           <template v-slot:prepend>
             <q-icon name="fad fa-h2" />
@@ -175,6 +183,7 @@
           label="Author"
           :debounce="500"
           :value="author"
+          :disable="disableInput"
         >
           <template v-slot:prepend>
             <q-icon name="fad fa-id-card-alt" />
@@ -216,6 +225,7 @@
           rounded
           map-options
           use-chips
+          :disable="disableInput"
           error-message="Too many selected. Please remove before adding more."
           v-model="technologies"
           :rules="[val => val.length <= 8]"
@@ -262,9 +272,6 @@
                   <span class="q-ml-sm">{{ scope.opt.label }}</span>
                 </q-item-label>
               </q-item-section>
-              <!--<q-item-section side>
-                <q-toggle :val="scope.opt.selected" :value="scope.opt.selected" @input="updateTechOpt(scope.index, TECHNOLOGIES)" />
-              </q-item-section>-->
             </q-item>
           </template>
         </q-select>
@@ -274,12 +281,18 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
+import { mapState } from "vuex";
 import techOptions from "../../public/data/techOptions.json";
 import FilterImage from "./FilterImage";
 import UnsplashDialog from "./UnsplashDialog";
 
 export default {
+  props: {
+    disableInput: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       FONT: 1,
@@ -319,7 +332,6 @@ export default {
   },
   methods: {
     updateVal(value, method) {
-      console.log("val", value);
       let data = {
         ...this.$store.state.text.textOptions
       };
@@ -361,15 +373,12 @@ export default {
       this.$store.commit("text/updateOptions", { data: data });
     },
     setBackground(data) {
-      console.log("background", data);
       //this.$store.commit("image/updateOptions", {imageOptions: data })
     },
     updateTechOpt(value) {
-      console.log("value", value);
       this.$store.commit("text/updateTechOptions", { data: this.technologies });
     },
     updateImage(value, method) {
-      console.log("avl", value);
       let data = {
         ...this.$store.state.image.imageOptions
       };
@@ -381,7 +390,6 @@ export default {
       this.$store.commit("image/updateOptions", { imageOptions: data });
     },
     filterFn(val, update, abort) {
-      console.log("val", val);
       if (val.length < 3) {
         abort();
         return;

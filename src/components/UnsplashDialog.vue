@@ -53,7 +53,6 @@
 
 <script>
 import UnsplashCard from "./UnsplashCard";
-import feathersClient from "../boot/feathersClient";
 
 export default {
   props: {
@@ -91,7 +90,7 @@ export default {
         delay: 400 // ms
       });
 
-      const { response } = await feathersClient.service("unsplash").find({
+      const { response } = await this.$feathersClient.service("unsplash").find({
         query: {
           query: this.search ? this.search : "technology",
           page: this.currentPage,
@@ -110,9 +109,8 @@ export default {
     },
     downloadImageTriggered() {
       // track photo
-      feathersClient.service("unsplash").find({
+      this.$feathersClient.service("unsplash/track").find({
         query: {
-          action: "trackPhoto",
           download_location: this.$store.state.image.imageOptions.downloadInfo
         }
       });

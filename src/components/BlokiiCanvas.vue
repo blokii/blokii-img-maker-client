@@ -206,7 +206,6 @@ export default {
       ctx.rect(0, this.HEIGHT / 5 + 200, this.WIDTH, this.HEIGHT / 5);
       ctx.fill();
     },
-    drawImage() {},
     drawText(ctx, x) {
       if (this.title) {
         ctx.font = "bold 84px '" + this.font + "', serif";

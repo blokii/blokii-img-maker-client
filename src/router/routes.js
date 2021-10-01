@@ -3,9 +3,24 @@ const routes = [
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/Index.vue") },
-      { path: "/about", component: () => import("pages/About.vue") },
-      { path: "/help", component: () => import("pages/Help.vue") }
+      { path: "", name: "home", component: () => import("pages/Index.vue") },
+      {
+        path: "/images",
+        name: "images",
+        component: () => import("pages/Images.vue")
+      },
+      {
+        path: "/image/:id",
+        name: "img-detail",
+        component: () => import("pages/Image.vue"),
+        props: true
+      },
+      {
+        path: "/about",
+        name: "about",
+        component: () => import("pages/About.vue")
+      },
+      { path: "/help", name: "help", component: () => import("pages/Help.vue") }
     ]
   },
 

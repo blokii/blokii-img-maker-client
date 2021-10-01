@@ -51,7 +51,6 @@ export default {
       return this.$store.state.image.imageOptions.selectedImage === val;
     },
     updateImage(value, method) {
-      console.log("newurl", value);
       let data = {
         ...this.$store.state.image.imageOptions
       };

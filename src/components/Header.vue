@@ -27,10 +27,35 @@
             </span>
           </q-btn>
         </q-toolbar-title>
-        <div class="gt-md visible comfortaa">
-          <q-btn stretch flat label="Home" icon="fad fa-home" to="/" />
-          <q-btn stretch flat label="About" icon="fad fa-info" to="/about" />
-          <q-btn stretch flat label="Help" icon="fad fa-question" to="/help" />
+        <div class="gt-sm visible comfortaa">
+          <q-btn
+            stretch
+            flat
+            label="Home"
+            icon="fad fa-home"
+            :to="{ name: 'home' }"
+          />
+          <q-btn
+            stretch
+            flat
+            label="About"
+            icon="fad fa-info"
+            :to="{ name: 'about' }"
+          />
+          <q-btn
+            stretch
+            flat
+            label="Images"
+            icon="fad fa-image"
+            :to="{ name: 'images' }"
+          />
+          <q-btn
+            stretch
+            flat
+            label="Help"
+            icon="fad fa-question"
+            :to="{ name: 'help' }"
+          />
         </div>
       </q-toolbar>
     </q-header>
@@ -44,7 +69,13 @@
     >
       <q-scroll-area class="fit">
         <q-list padding>
-          <q-item :active="checkActive('/home')" clickable v-ripple to="/home">
+          <q-item
+            active-class="text-yellow"
+            :active="checkActive('home')"
+            clickable
+            v-ripple
+            :to="{ name: 'home' }"
+          >
             <q-item-section avatar>
               <q-icon name="fad fa-home" />
             </q-item-section>
@@ -55,10 +86,11 @@
           </q-item>
 
           <q-item
-            :active="checkActive('/about')"
+            active-class="text-yellow"
+            :active="checkActive('about')"
             clickable
             v-ripple
-            to="/about"
+            to="about"
           >
             <q-item-section avatar>
               <q-icon name="fad fa-info-circle" />
@@ -68,7 +100,28 @@
               About
             </q-item-section>
           </q-item>
-          <q-item :active="checkActive('/help')" clickable v-ripple to="/help">
+          <q-item
+            active-class="text-yellow"
+            :active="checkActive('images')"
+            clickable
+            v-ripple
+            to="images"
+          >
+            <q-item-section avatar>
+              <q-icon name="fad fa-images" />
+            </q-item-section>
+
+            <q-item-section>
+              Images
+            </q-item-section>
+          </q-item>
+          <q-item
+            active-class="text-yellow"
+            :active="checkActive('help')"
+            clickable
+            v-ripple
+            to="help"
+          >
             <q-item-section avatar>
               <q-icon name="fad fa-question-circle" />
             </q-item-section>
@@ -92,7 +145,7 @@ export default {
   },
   methods: {
     checkActive(currentLink) {
-      return this.$route.path === currentLink;
+      return this.$route.name === currentLink;
     }
   }
 };

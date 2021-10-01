@@ -1,16 +1,31 @@
-export function updateOptions( state, payload) {
-  state.imageOptions = payload.imageOptions
+export function updateOptions(state, payload) {
+  state.imageOptions = payload.imageOptions;
 }
 
-export function updateFilter (state, payload) {
-  let newFilter = {...state.imageOptions.filter}
+export function updateFilter(state, payload) {
+  let newFilter = { ...state.imageOptions.filter };
   newFilter.filterName = payload.filterName;
   newFilter.filterParams.filterValue = null;
-  state.imageOptions.filter = newFilter
+  state.imageOptions.filter = newFilter;
 }
 
 export function updateFilterOptions(state, payload) {
-  let newFilter = {...state.imageOptions.filter}
+  let newFilter = { ...state.imageOptions.filter };
   newFilter.filterParams.filterValue = payload.settings;
-  state.imageOptions.filter = newFilter
+  state.imageOptions.filter = newFilter;
+}
+
+export function setImageOptions(state, payload) {
+  state.imageOptions = payload;
+}
+
+export function clear(state) {
+  state.imageOptions = {
+    backgroundUrl: "",
+    selectedImage: "",
+    filter: {
+      filterName: "",
+      filterParams: {}
+    }
+  };
 }

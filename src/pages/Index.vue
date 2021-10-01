@@ -11,10 +11,9 @@
       icons. To get started, select an image. You can either enter a url with an
       image you'd like to use or select an image from Unsplash. Please note, at
       the time of deployment, the Unsplash API hasn't been cleared yet for
-      production use, so it's currently limited to 50 requests per hour. This
-      process typically takes several days, so please be patient if results
-      don't appear! This is a work in progress. Let me know what you want to see
-      from this by sending me a
+      production use, so it's currently limited to 50 requests per hour. This is
+      a work in progress. Let me know what you want to see from this by sending
+      me a
       <a
         class="text-weight-bold text-black"
         style="text-decoration:none"
@@ -57,13 +56,30 @@
         </q-card-section>
         <q-card-actions align="right" class="q-px-md">
           <q-btn
+            color="negative"
+            unelevated
+            @click="clear"
+            icon="fad fa-trash"
+            label="Clear"
+            size="sm"
+          />
+          <q-btn
+            unelevated
+            color="primary"
+            @click="saveImage"
+            icon="fad fa-save"
+            label="Save"
+            :disable="filename"
+            size="sm"
+          />
+          <q-btn
             unelevated
             color="positive"
             @click="$root.$emit('download-image')"
             icon="fad fa-download"
             label="Download"
             :disable="filename"
-            size="md"
+            size="sm"
           />
         </q-card-actions>
       </q-card>
@@ -72,8 +88,6 @@
 </template>
 
 <script>
-import techOptions from "../../public/data/techOptions.json";
-import fontOptions from "../../public/data/fonts.json";
 import Settings from "../components/Settings";
 import BlokiiCanvas from "../components/BlokiiCanvas";
 import { mapState } from "vuex";
@@ -96,6 +110,16 @@ export default {
   methods: {
     updateFilename(filename) {
       this.$store.commit("global/SET_FILENAME", { filename: filename });
+    },
+    saveImage() {
+      this.$store.dispatch("image/save").then(() => {
+        this.$router.push("/images");
+      });
+    },
+    clear() {
+      this.$store.commit("image/clear");
+      this.$store.commit("text/clear");
+      this.$store.commit("global/SET_FILENAME", { filename: "" });
     }
   },
   mounted() {

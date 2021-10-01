@@ -32,7 +32,7 @@ See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
 
 ## Tech
 
-In addition to leveraging the power of the Quasar Framework, it also uses the FontAwesome icon set and FeathersJS Client library to connect to the Feathers Backend server. It is currently compiled and deployed as an SPA with the server on Digital Ocean.
+In addition to leveraging the power of the Quasar Framework, it also uses the FontAwesome icon set and FeathersJS Client library to connect to the Feathers Backend server. It uses a Fontawesome Pro License, which is domain restricted and only works on certain domains.
 
 ## Contribute
 

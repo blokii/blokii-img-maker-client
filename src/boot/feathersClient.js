@@ -6,9 +6,9 @@ import feathersVuex from "feathers-vuex";
 import Vue from "vue";
 import { socketio } from "@feathersjs/client";
 
-//const API_URL = window.location.protocol + "//" + window.location.host + "/";
-//const API_URL = "http://localhost:3030";
-const API_URL = process.env.API_URL || "https://img-maker-api.blokii.com";
+// setting up feathers client to connect to server
+
+const API_URL = process.env.API_URL || "http://localhost:3030";
 
 const socket = io(API_URL, {
   transports: ["websocket"],
